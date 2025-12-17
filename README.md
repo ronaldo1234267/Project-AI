@@ -13,25 +13,44 @@ Informed Search (A*)
 
 Local Search (Hill Climbing)
 
-<h2>🎯 Problem Description:</h2>
+<h2>🎯 Problem Description</h2>
 
-The maze is represented as a 2D grid:
+The goal is to find the shortest path from a start position to a goal position in a maze
+represented as a grid.
 
-0 → Free cell (can move)
+<h3>Maze Representation</h3>
 
-1 → Wall (blocked)
+- **Free cell** → `0`
+- **Wall (blocked cell)** → `1`
 
-The agent can move in four directions:
+<h3>State Representation</h3>
 
-Up
+- A state is represented as a coordinate pair **(x, y)**
 
-Down
+<h3>Initial State</h3>
 
-Left
+- The starting coordinate:  
+  **start = (sx, sy)**
 
-Right
+<h3> Goal State</h3>
 
-Each move has a cost of 1.
+- The target coordinate:  
+  **goal = (gx, gy)**
+
+<h3> Actions (Successor Function)</h3>
+From any cell, the agent can move in four directions:
+
+- Up
+- Down
+- Left
+- Right
+
+Moves are allowed only if:
+- The cell is within the maze boundaries
+- The cell is not a wall
+
+<h3>Cost Function</h3>
+- Each move has a uniform cost of **1**
 
 <h2>🧠 Implemented Algorithms:</h2>
 1️⃣ Breadth-First Search (BFS)
