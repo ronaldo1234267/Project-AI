@@ -76,6 +76,8 @@ In experiments, Manhattan Distance showed the best performance with A*.
 <h2>🗂 Project Structure</h2>
 
 The following structure shows how the project files and folders are organized:
+
+```text
 project/
 ├── src/
 │   ├── algorithms/
@@ -95,6 +97,7 @@ project/
 │
 ├── README.md                   # Project documentation
 └── report.pdf                  # Final project report
+
 
 <h2>▶️ How to Run the Project:</h2>
 
