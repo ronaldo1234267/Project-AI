@@ -1,0 +1,75 @@
+Performance Metrics to Track:
+To fairly evaluate and compare the search algorithms (BFS, A*, and Hill Climbing), the following performance metrics were measured:
+1. Time Complexity (Wall-clock Execution Time):
+This metric measures the actual time taken by the algorithm to find a solution, from the start state until the goal is reached or failure is declared.
+It reflects how fast the algorithm performs in practice on the given maze.
+* BFS: Slower due to exhaustive level-by-level exploration.
+* A*: Faster due to heuristic guidance toward the goal.
+* Hill Climbing: Usually very fast, but may terminate early without finding a solution.
+
+2. Space Complexity (Peak Memory Usage):
+This represents the maximum amount of memory consumed during execution.
+* BFS: High memory usage because it stores all frontier nodes in a queue.
+* A*: High memory usage due to maintaining open and closed lists.
+* Hill Climbing: Very low memory usage since it stores only the current state.
+
+3. Solution Quality (Optimality of the Solution):
+This metric evaluates whether the algorithm guarantees the shortest path.
+* BFS: Always finds the optimal (shortest) path.
+* A*: Finds the optimal path if the heuristic is admissible.
+* Hill Climbing: Does not guarantee optimality.
+
+4. Nodes Explored:
+This metric counts the total number of nodes expanded during the search process.
+* BFS: Explores a large number of nodes.
+* A*: Explores fewer nodes due to heuristic pruning.
+* Hill Climbing: Explores very few nodes but risks getting stuck.
+
+5. Path Cost:
+The total cost of the final path from the start node to the goal node.
+* BFS: Minimum path cost (assuming uniform step cost).
+* A*: Minimum path cost when heuristic is admissible.
+* Hill Climbing: Path cost may be higher than optimal.
+
+| Metric               | BFS                     | A*                                  | Hill Climbing     |     
+| -------------------- | ----------------------- | ----------------------------------- |-------------------
+| Search Type          | Uninformed Search       | Informed Search                     | Local Search      |         |
+| Time Complexity      | O(V + E)                | O(E) (depends on heuristic)         | O(b × d)          |        |
+| Space Complexity     | O(V)                    | O(V)                                | O(1)              |        |
+| Solution Quality     | Optimal (shortest path) | Optimal (with admissible heuristic) | Not optimal       |         |
+| Completeness         | Complete                | Complete                            | Not complete      |         |
+| Nodes Explored       | High                    | Medium–Low                          | Very Low          |         | 
+| Execution Time       | High                    | Medium                              | Low               |         |
+| Path Cost            | Minimum                 | Minimum                             | Not guaranteed    |         |
+| Memory Usage         | High                    | Medium                              | Very Low          |         |
+| Risk of Failure      | None                    | None                                | High (local maxima)|        |
+| Heuristic Used       | No                      | Yes                                 | Yes               |
+|                        
+| Best Use Case        | Small / simple mazes    | Large / complex mazes               | Fast              |
+|													   |
+------------------------------------------------------------------------------------------------------------
+
+
+Visualization Recommendations:
+
+To better understand and analyze the behavior of the algorithms, the following visualizations are recommended:
+
+1. Search Tree / Graph Visualization
+Display the order in which nodes are explored to illustrate how each algorithm navigates the maze.
+
+2. Solution Path Animation
+Animate the final path from the start to the goal to clearly show the efficiency and direction of each algorithm.
+
+3. Performance Comparison Charts
+Use bar charts or tables to compare:
+* Execution time
+* Number of nodes explored
+* Path cost
+This helps highlight performance differences between BFS, A*, and Hill Climbing.
+
+4. Heatmaps
+Generate heatmaps showing how frequently nodes are visited.
+This visualization reveals:
+* Areas of heavy exploration
+* Algorithm efficiency across different maze sizes and complexities
+
