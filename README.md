@@ -73,24 +73,28 @@ Diagonal Distance
 
 In experiments, Manhattan Distance showed the best performance with A*.
 
-<h2>🗂 Project Structure:</h2>
+<h2>🗂 Project Structure</h2>
+
+The following structure shows how the project files and folders are organized:
 project/
 ├── src/
 │   ├── algorithms/
-│   │   ├── bfs.py
-│   │   ├── astar.py
-│   │   └── hill_climbing.py
+│   │   ├── bfs.py              # Breadth-First Search algorithm
+│   │   ├── astar.py            # A* search algorithm
+│   │   └── hill_climbing.py    # Hill Climbing algorithm
 │   │
 │   ├── problems/
-│   │   └── maze.py
+│   │   └── maze.py             # Maze generation and visualization
 │   │
-│   ├── heuristics.py
-│   └── main.py
+│   ├── heuristics.py           # Heuristic functions
+│   └── main.py                 # Main program entry point
 │
 ├── results/
-│   └── performance.txt
+│   ├── performance.txt         # Performance metrics and results
+│   └── analysis.txt            # Algorithm analysis and comparison
 │
-└── README.md
+├── README.md                   # Project documentation
+└── report.pdf                  # Final project report
 
 <h2>▶️ How to Run the Project:</h2>
 
