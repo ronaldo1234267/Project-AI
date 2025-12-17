@@ -73,7 +73,7 @@ Diagonal Distance
 
 In experiments, Manhattan Distance showed the best performance with A*.
 
-## 🗂 Project Structure
+<h2>🗂 Project Structure</h2>
 
 The following structure shows how the project files and folders are organized:
 
@@ -104,9 +104,9 @@ Make sure Python is installed
 Navigate to the project directory
 
 Run the main file:
-
+```text
 python src/main.py
-
+```
 <h2>📊 Performance Metrics</h2>
 
 Each algorithm reports:
