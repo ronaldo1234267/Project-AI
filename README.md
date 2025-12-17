@@ -73,7 +73,7 @@ Diagonal Distance
 
 In experiments, Manhattan Distance showed the best performance with A*.
 
-<h2>🗂 Project Structure</h2>
+##<h2>🗂 Project Structure</h2>
 
 The following structure shows how the project files and folders are organized:
 
