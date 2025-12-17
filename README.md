@@ -73,7 +73,7 @@ Diagonal Distance
 
 In experiments, Manhattan Distance showed the best performance with A*.
 
-##<h2>🗂 Project Structure</h2>
+<h2>🗂 Project Structure</h2>
 
 The following structure shows how the project files and folders are organized:
 
@@ -99,46 +99,3 @@ project/
 └── report.pdf                  # Final project report
 
 
-<h2>▶️ How to Run the Project:</h2>
-
-Make sure Python is installed
-
-Navigate to the project directory
-
-Run the main file:
-
-python src/main.py
-
-<h2>📊 Performance Metrics:</h2>
-
-Each algorithm reports:
-
-Path Length
-
-Nodes Explored
-
-Execution Time (ms)
-
-Sample Results (50×50 Maze)
-
-| Algorithm     | Path Length | Nodes Explored | Time (ms) | Optimal |
-|---------------|-------------|----------------|-----------|---------|
-| BFS           | 45          | 800            | 20        | Yes     |
-| A* Search     | 45          | 150            | 5         | Yes     |
-| Hill Climbing | 50          | 100            | 3         | No      |
-
-
-<h2>📈 Analysis & Discussion</h2>
-
-BFS always finds the shortest path but explores many unnecessary nodes.
-
-A* significantly reduces the number of explored nodes using heuristics.
-
-Hill Climbing is fast but unreliable and may fail to reach the goal.
-
-✅ A* with Manhattan heuristic provides the best balance between efficiency and optimality.
-
-<h2>🧾 Conclusion:</h2>
-
-This project highlights how informed search algorithms outperform uninformed ones in complex environments.
-It also shows the limitations of local search methods like Hill Climbing.
