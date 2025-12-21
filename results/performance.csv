@@ -1,4 +1,0 @@
-Algorithm,Path Length,Nodes Explored,Time (ms)
-BFS,39,325,1.02
-A*,39,245,1.0
-Hill Climbing,25,24,0.0
